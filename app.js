@@ -1,12 +1,15 @@
 /////////////////////////////////////
 /* Problem 1 (this is your demo)
-Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called sum() that takes in two numbers as arguments and then returns an
+array where the first element is the sum of those numbers,
+ and the second element is a string that EXACTLY follows this
+ example and uses the values that were input into the function:
 "The sum of 4 and 7 is 11."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
 function sum(a, b) {
-  return a + b;
+  return [(a+b), 'The sum of '+a+' and '+b+' is '+(a + b)+'.'];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -21,7 +24,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function testMultiply(a, b){
+function multiply(a, b){
   return a * b;
 }
 
@@ -32,12 +35,18 @@ testMultiply(4,7);
 
 /////////////////////////////////////
 /* Problem 3
-Write a function called sumAndMultiply() that takes in three numbers as arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
+Write a function called sumAndMultiply() that takes in three numbers as arguments and returns an array where the
+first element is the sum of those three numbers, the second element is the product of those three numbers,
+and the third and fourth elements are strings that EXACTLY follow this example and use the values that were
+input into the function:
 Third element: "4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
+function sumAndMultiply(a, b, c) {
+  return [(a+b+c), (a*b*c), (a+' and '+b+' and '+c+' sum to '+(a+b+c)+'.'), ('The product of '+a+' and '+b+' and '+c+' is '+(a*b*c)+'.')];
+}
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
