@@ -9,7 +9,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) {
-  return [(a+b), 'The sum of '+a+' and '+b+' is '+(a + b)+'.'];
+  return [(a + b), 'The sum of ' + a + ' and ' + b + ' is ' + (a + b) + '.'];
 }
 
 // Here is the test for sum(); uncomment it to run it
@@ -25,7 +25,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b){
-  return a * b;
+  return [a * b, 'The product of ' + a + ' and ' + b + ' is ' + (a * b) + '.'];
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -61,6 +61,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 testArray = [2,3,4];
+function sumArray(a){
+  var result = [0];
+  for (var i = 0; i < a.length; i++) {
+    result[0] += a[i];
+  }
+  result.push(a + ' was passed in as an array of numbers, and ' + result[0] + ' is their sum.');
+  return result;
+}
 
 // Here is the test for sumArray(); uncomment it to run it
 testSumArray(testArray);
