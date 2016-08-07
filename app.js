@@ -61,6 +61,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 testArray = [2,3,4];
+
 function sumArray(a){
   var result = [0];
   for (var i = 0; i < a.length; i++) {
@@ -82,6 +83,14 @@ Write a function called multiplyArray() that takes an array of numbers as its ar
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+function multiplyArray(a){
+  var result = [1];
+  for (var i = 0; i < a.length; i++) {
+    result[0] *= a[i];
+  }
+  result.push('The numbers '+a+' have a product of '+result[0]+'.');
+  return result;
+}
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
